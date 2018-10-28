@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>hoho</title>
+  <link rel="stylesheet" href="css/mystyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+</head>
+<body>
+
+<!-- Шапка -->
+<header>
+  <div class="logo">
+    <a href="mytrips.html"><img class="graficlogo" src="img/TravelNoire.png" alt="Logo"></a>
+  </div>
+  <nav>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html"> <span class = "icon">&#x2708; </span> Авиабилеты</a>
+      <a href="mytrips.html"> <span class = "icon">&#x2764; </span> Рекоминдации</a>
+      <a id = "singin" href="logIn.html"><span class = "icon">&#x270e; </span> Войти</a>
+      <a id="menu" href="#" class = "icon">&#x2708;</a>
+    </div>
+  </nav>
+</header>
+
+<!-- Блог -->
+<main>
+  <div class="blog-container">
+    <div class="blog-header">
+      <div class="blog-cover">
+          <!-- автор дата поста -->
+      </div>
+    </div>
+    <div class="blog-body">
+      <div class="blog-title">
+        <h1><a href="#">БАЛИ</a></h1>
+      </div>
+      <div class="blog-text">
+        <p><<Путешествия – это флирт с жизнью. Это как сказать: «Я бы хотел остаться с тобой, я бы хотел любить тебя, но мне надо выходить, это моя остановка>></p>
+      </div>
+      <div class="blog-tags">
+      <ul>
+        <li><a href="#">travel</a></li>
+        <li><a href="#">flirt</a></li>
+        <li><a href="#">love</a></li>
+        <li><a href="#">you</a></li>
+      </ul>
+      </div>
+    </div>
+    <div class="blog-footer">
+      <ul>
+        <li class="publisher-date">Лиза Сен-Обен-де-Теран</li>
+      </ul>
+    </div>
+  </div>
+
+<!-- ВТОРОЙ ПОСТ-->
+
+  <div class="blog-container">
+    <div class="blog-header">
+      <div class="blog-cover2">
+          <!-- автор дата поста -->
+      </div>
+    </div>
+    <div class="blog-body">
+      <div class="blog-title">
+        <h1><a href="#">ВЕНЕЦИЯ</a></h1>
+      </div>
+      <div class="blog-text">
+        <p><<Убежать от всего с помощью путешествия действительно можно. Почти с того самого момента, как я вел в самолет, жизнь в Англии утратила всякое значение. Включились индикаторы ремней безопасности, а проблемы отключились. Сломанный подлокотник стал важнее, чем разбитое сердце. К тому времени, когда самолет взмыл в воздух, я забыл о том, что Англия вообще существует>></p>
+      </div>
+      <div class="blog-tags">
+      <ul>
+        <li><a href="#">travel</a></li>
+        <li><a href="#">love</a></li>
+        <li><a href="#">moment</a></li>
+        <li><a href="#">England</a></li>
+      </ul>
+      </div>
+    </div>
+    <div class="blog-footer">
+      <ul>
+        <li class="publisher-date">Алекс Гарланд</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ТРЕТИЙ ПОСТ-->
+
+    <div class="blog-container">
+      <div class="blog-header">
+        <div class="blog-cover3">
+            <!-- автор дата поста -->
+        </div>
+      </div>
+      <div class="blog-body">
+        <div class="blog-title">
+          <h1><a href="#">ПАРИЖ</a></h1>
+        </div>
+        <div class="blog-text">
+          <p><<Мне не нужно было для путешествия ничего, кроме того, чтобы быть, где я есть, и знать то, что я знаю. Это были времена, когда я был полон самой простой житейской мудрости, когда я стучал в двери самого рая…>></p>
+        </div>
+        <div class="blog-tags">
+        <ul>
+          <li><a href="#">travel</a></li>
+          <li><a href="#">be</a></li>
+          <li><a href="#">time</a></li>
+          <li><a href="#">paradise</a></li>
+        </ul>
+        </div>
+      </div>
+      <div class="blog-footer">
+        <ul>
+          <li class="publisher-date">Тед Саймон</li>
+        </ul>
+      </div>
+    </div>
+</main>
+
+<!-- Поле регистрации -->
+<div class="overlay" style="display: none;">
+    <div class="login-wrapper">
+        <div class="login-content">
+            <a class="close">x</a>
+            <h3>Sign in</h3>
+            <form method="post" action="login.php">
+                <label for="username">
+                    Имя пользователя:
+                    <input type="text" name="username" id="username" placeholder="Username must be between 8 and 20 characters" pattern="^[a-zA-Z][a-zA-Z0-9-_.]{8,20}$" required="required" />
+                </label>
+                <label for="password">
+                    Пароль:
+                    <input type="password" name="password" id="password" placeholder="Password must contain 1 uppercase, lowercase and number" pattern="(?=^.{8,}$)((?=.*d)|(?=.*W+))(?![.n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+                <button type="submit">Sign in</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script scr="js/script.js"></script>
+<script type="text/javascript">
+menu.onclick = function myFunction() {
+  var menu = document.getElementById('menu');
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav")
+  {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+$(document).ready(function() {
+  $("#singin").click(function( event ){
+      event.preventDefault();
+      $(".overlay").fadeToggle("fast");
+    });
+
+  $(".close").click(function(){
+      $(".overlay").fadeToggle("fast");
+  });
+
+  $(document).keyup(function(e) {
+      if(e.keyCode == 27 && $(".overlay").css("display") != "none" ) {
+          event.preventDefault();
+          $(".overlay").fadeToggle("fast");
+      }
+  });
+});
+ </script>
+
+</body>
+</html>
