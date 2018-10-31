@@ -27,6 +27,9 @@ body{
 
  /* This is what makes the background image rescale based on its container's size */
  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 .logo{
   background: #D7BDE2;
@@ -525,13 +528,17 @@ width: 100%;
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 482px) {
   .vikz-form{
     margin-left: 20px;
   }
   
   .vikz-submit-wrap {
-    padding-left: 35px;
+    margin-left: 40px;
+  }
+  .d1 {
+
+    text-align: center;
   }
 
 }
