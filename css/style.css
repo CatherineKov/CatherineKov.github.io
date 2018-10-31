@@ -14,7 +14,7 @@ li{
 body{
   font-family: 'Mali', cursive;
   height: 100%;
-  background-image: url(https://besthqwallpapers.com/Uploads/17-1-2018/37494/airbus-a380-passenger-plane-sky-sunset-air-travel.jpg);
+  background-image: url(http://stillsomajor.com/wp-content/uploads/2017/04/10-Tips-To-Score-Cheap-Plane-Tickets.jpeg);
       /* Image is centered vertically and horizontally at all times */
  background-position: center center;
 
@@ -514,7 +514,7 @@ background: #000;
 }
 @media screen and (max-width: 70em) {
 .vikz-column {
-width: 50%;
+width: 65%;
 }
 .vikz-column:nth-child(3) {
 width: 100%;
@@ -534,7 +534,7 @@ width: 100%;
   }
   
   .vikz-submit-wrap {
-    margin-left: 40px;
+    margin-left: 100px;
   }
   .d1 {
 
