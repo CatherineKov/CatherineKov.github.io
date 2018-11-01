@@ -16,7 +16,7 @@ body{
   height: 100%;
   background-image: url(http://stillsomajor.com/wp-content/uploads/2017/04/10-Tips-To-Score-Cheap-Plane-Tickets.jpeg);
       /* Image is centered vertically and horizontally at all times */
- background-position: center center;
+ background-position: center;
 
  /* Image doesn't repeat */
  background-repeat: no-repeat;
@@ -27,23 +27,28 @@ body{
 
  /* This is what makes the background image rescale based on its container's size */
  background-size: cover;
-  -webkit-background-size: cover;
+
+ -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+
 }
 .logo{
+  display: flex;
   background: #D7BDE2;
   opacity: 0.8;
   width: 100%;
+  justify-content: center;
   display: inline-block;
   text-align: center;
-  justify-content: center;
+
 }
 .graficlogo{
   padding: 15px;
   max-width: 100%;
   box-sizing: border-box;
 }
+
 nav{
   margin: auto;
   width: 650px;
@@ -138,7 +143,6 @@ background-color: #ec6550;
 text-shadow: #454545 0 0 2px;
 cursor: pointer;
 color: white;
-
 }
 
 .button-submit:hover {
@@ -514,7 +518,7 @@ background: #000;
 }
 @media screen and (max-width: 70em) {
 .vikz-column {
-width: 65%;
+width: 70%;
 }
 .vikz-column:nth-child(3) {
 width: 100%;
@@ -530,15 +534,163 @@ width: 100%;
 
 @media screen and (max-width: 482px) {
   .vikz-form{
-    margin-left: 20px;
+    margin-left: 40px;
+    width: 100%;
   }
-  
   .vikz-submit-wrap {
-    margin-left: 100px;
+
+    margin-left: 80px;
   }
   .d1 {
-
-    text-align: center;
+  margin-top: 60px;
+  text-align: center;}
   }
-
 }
+
+/* Вывод городов*/
+.content-form {
+    position: relative;
+    width: 750px;
+    margin: 0 auto;
+}
+.ac_results {
+	padding: 0px;
+	border: 1px solid WindowFrame;
+	background-color: Window;
+	overflow: hidden;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results iframe {
+	display:none;/*sorry for IE5*/
+	display/**/:block;/*sorry for IE5*/
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-1;
+	filter:mask();
+	width:3000px;
+	height:3000px;
+}
+
+.ac_results li {
+	position:relative;
+    margin: 0px;
+	padding: 2px 5px;
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	font: menu;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+/* КАЛЕНДАРЬ*/
+
+/*
+	Stylesheet for Tigra Calendar v5.0
+	Product is Public Domain (Free for any kind of applicaiton, customization and derivative works are allowed)
+	URL: http://www.softcomplex.com/products/tigra_calendar/
+
+	- all image paths are relative to path of stylesheet
+	- the styles below can be moved into the document or in existing stylesheet
+
+*/
+
+/* input box in default state */
+.tcalInput {
+	background: url('img/cal.gif') 100% 50% no-repeat;
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+/* additional properties for input boxe in activated state, above still applies unless in conflict */
+.tcalActive {
+	background-image: url('img/no_cal.gif');
+}
+/* container of calendar's pop-up */
+#tcal {
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	width: 170px;
+	background-color: white;
+	margin-top: 2px;
+	padding: 0 2px 2px 2px;
+	border: 1px solid silver;
+
+	-moz-box-shadow: 3px 3px 4px silver;
+	-webkit-box-shadow: 3px 3px 4px silver;
+	box-shadow: 3px 3px 4px silver;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='silver')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='silver');
+}
+
+/* table containing navigation and current month */
+#tcalControls {
+	border-collapse: collapse;
+	border: 0;
+	width: 100%;
+}
+#tcalControls td {
+	border-collapse: collapse;
+	border: 0;
+	padding: 0;
+	width: 16px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+#tcalControls th {
+	border-collapse: collapse;
+	border: 0;
+	padding: 0;
+	line-height: 25px;
+	font-size: 10px;
+	text-align: center;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+}
+#tcalPrevYear { background-image: url('img/prev_year.gif'); }
+#tcalPrevMonth { background-image: url('img/prev_mon.gif'); }
+#tcalNextMonth { background-image: url('img/next_mon.gif'); }
+#tcalNextYear { background-image: url('img/next_year.gif'); }
+
+/* table containing week days header and calendar grid */
+#tcalGrid {
+	border-collapse: collapse;
+	border: 1px solid silver;
+	width: 100%;
+}
+#tcalGrid th {
+	border: 1px solid silver;
+	border-collapse: collapse;
+	padding: 3px 0;
+	text-align: center;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	background-color: gray;
+	color: white;
+}
+#tcalGrid td {
+	border: 0;
+	border-collapse: collapse;
+	padding: 2px 0;
+	text-align: center;
+	font-family: Tahoma, Geneva, sans-serif;
+	width: 14%;
+	font-size: 11px;
+	cursor: pointer;
+}
+#tcalGrid td.tcalOtherMonth { color: silver; }
+#tcalGrid td.tcalWeekend { background-color: #ACD6F5; }
+#tcalGrid td.tcalToday { border: 1px solid red; }
+#tcalGrid td.tcalSelected { background-color: #FFB3BE; }
